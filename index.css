@@ -1,0 +1,64 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.main-nav a{
+    margin: 5px;
+    color: aliceblue;
+    margin-left:30px;
+}
+.header{
+    background-color: cadetblue;
+    padding: 20px 10px;
+}
+.search-input{
+width: 100%;
+border: 1px solid cornsilk;
+border-radius: 8%;
+height: 30px;
+padding: 10px;
+}
+.search-div{
+    margin: 20px auto;
+    width: 20%;
+    padding-top: 20px;
+    
+}
+.pet-list{
+    padding: 30px;
+    display: flex;
+}
+.statement{
+margin-right: 50px;
+width: 300px;
+padding: 0px 5px;
+
+}
+
+
+.statement-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid;
+    cursor: pointer;
+    border: 1px solid #bdbdbb;
+    ;
+
+
+    
+}
+
+.author-info{
+font-size: 0.8rem;
+
+}
+.statement-title{
+    text-align: center;
+}

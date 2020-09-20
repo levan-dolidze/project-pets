@@ -13,28 +13,57 @@ this.image=image;
 
 
 
-class Cat extends Pet{
-constructor(category,age,gender){
+class Pet{
+constructor(category,age,gender,color){
 this.age=age;
-this.category=category
-this.gender=gender
+this.category=category;
+this.gender=gender;
+this.color=color
 
 
 }
 }
-
 
 
 class Cat extends Pet {
 constructor(category,age,gender,toiletFriendly){
-super(category,age,gender);
+super(category,age,gender,color);
 this.toiletFriendly=toiletFriendly;
 
 
+
 }
 }
 
+class Dog extends Pet {
+    constructor(category,age,gender,toiletFriendly,breed){
+    super(category,age,gender,color);
+    this.toiletFriendly=toiletFriendly;
+    this.breed=breed
 
-const statement = new Statement("ჩუქდება 2 თვის თეთრი კნუტი","1თვის","ლევან","599887788","თბილისი","არის საყვარელი",null,0,null)
+
+    }
+    }
+    class Hamster extends Pet {
+        constructor(category,age,gender,toiletFriendly,food){
+        super(category,age,gender,color);
+        this.toiletFriendly=toiletFriendly;
+        this.food=food;
+       
+        
+        
+        }
+        }
+        class Monkey extends Pet {
+            constructor(category,age,gender,toiletFriendly,trained){
+            super(category,age,gender,color);
+            this.toiletFriendly=toiletFriendly;
+            this.trained=trained
+            
+            
+            }
+            }
+
+const statement = new Statement("ჩუქდება თეთრი კნუტი 1 თვის","ლევან","599887788","თბილისი","არის მაგარი კნუტი",null,0,null)
 
 

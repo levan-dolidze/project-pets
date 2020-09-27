@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +26,7 @@
             <label for="title">Title</label>
             <input type="text" name="title" class="form-control" id="title">
         </div>
-        <div class="form-group">
-            <label for="image">Image Src</label>
-            <input type="text" name="image" class="form-control" id="image">
-        </div>
+       
         <div class="form-group">
             <label for="description">Description</label>
             <textarea name="description" id="description" class="form-control" rows="10"></textarea>
@@ -43,6 +39,15 @@
             <label for="contactPersonNumber">Contact Person Number</label>
             <input type="tel" name="contactPersonNumber" class="form-control" id="contactPersonNumber">
         </div>
+        <div class="form-group">
+         <input type="file" name="inpFile" id="image">
+         <div class="image-preview" id=imagePreview>
+             <img src="" alt="Image Preview" class='image-preview__image'>
+         <span class=image-preview__default-text>ფოტოს ადგილი</span>
+        
+        </div>
+
+        </div>
         <button type="button" class="btn btn-primary" id="addBtn">Add</button>
     </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -54,6 +59,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+<div class='result'>
+
+
+</div>
+
 
     <script src="classes.js"></script>
     <script src="add.js"></script>

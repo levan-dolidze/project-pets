@@ -46,7 +46,6 @@ body {
     height: 200px;
     cursor: pointer;
     object-fit: cover;
-    /* border: 1px solid #BDBDBD; */
     border-width: 1px;
     border-color:  #BDBDBD;
     border-top-style: solid;

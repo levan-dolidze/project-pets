@@ -6,14 +6,26 @@ const contactPersonName = document.getElementById('contactPersonName');
 const contactPersonNumber = document.getElementById('contactPersonNumber');
 const result=document.querySelector(".result")
 
+localStorage.setItem('hello','2');
+
+const statements =[];
+
+
 addBtn.addEventListener('click', ()=>{
-const newStatement= new Statement(titleInput.value,contactPersonNumber.value,contactPersonNumber.value,null,description.value,null,null,imageInput.value)
+const newStatement= new Statement(titleInput.value,contactPersonName.value,contactPersonNumber.value,null,description.value,null,null,imageInput.value)
+statements.push(newStatement)
 
 console.log(newStatement)
 
 
+// window.location.replace('index.html');
+
 });
-//image loader
+
+
+
+
+// image loader
 const previewContainer=document.getElementById('imagePreview');
 const previewImage=previewContainer.querySelector(".image-preview__image");
 const previewDefaultText=previewContainer.querySelector(".image-preview__default-text");

@@ -1,4 +1,5 @@
 const addBtn = document.getElementById('addBtn')
+
 const titleInput = document.getElementById('title');
 const imageInput = document.getElementById('image');
 const description = document.getElementById('description');
@@ -6,23 +7,35 @@ const contactPersonName = document.getElementById('contactPersonName');
 const contactPersonNumber = document.getElementById('contactPersonNumber');
 const result=document.querySelector(".result")
 
-localStorage.setItem('hello','2');
 
-const statements =[];
-
+const statements=[];
 
 addBtn.addEventListener('click', ()=>{
-const newStatement= new Statement(titleInput.value,contactPersonName.value,contactPersonNumber.value,null,description.value,null,null,imageInput.value)
-statements.push(newStatement)
+    if((titleInput.value===""||contactPersonName.value===""||contactPersonNumber.value===""||imageInput.value==="")){
+        alert('შეიყვანე მონაცემები სრულად')
+    }else{
 
-console.log(newStatement)
+const newStatement= new Statement(titleInput.value,contactPersonName.value,contactPersonNumber.value,null,description.value,null,null,imageInput.value);
+statements.push(newStatement);
+addTsatement(newStatement)
 
-
-// window.location.replace('index.html');
+}
 
 });
 
-
+const addTsatement=(statementParam)=> {
+  
+    $.ajax({
+        method: "POST",
+        url: "http://localhost:3000/statements",
+        data:statementParam
+    })
+    .done(function (data) {
+       
+           console.log(data)
+           window.location.replace('index.html');
+    });
+}
 
 
 // image loader
@@ -53,3 +66,7 @@ reader.readAsDataURL(file);
 }
 
 });
+
+
+
+

@@ -1,0 +1,37 @@
+{
+  "statements": [
+    {
+      "image": "C:\\fakepath\\SAM_2850.JPG",
+      "title": "4545",
+      "contactPersonName": "545454",
+      "contactPersonNumber": "54545",
+      "address": "",
+      "description": "45454",
+      "pet": "",
+      "price": "",
+      "id": 9
+    },
+    {
+      "image": "C:\\fakepath\\SAM_2850.JPG",
+      "title": "4545",
+      "contactPersonName": "54545",
+      "contactPersonNumber": "45454",
+      "address": "",
+      "description": "5454",
+      "pet": "",
+      "price": "",
+      "id": 13
+    },
+    {
+      "image": "C:\\fakepath\\SAM_2850.JPG",
+      "title": "787878",
+      "contactPersonName": "78787",
+      "contactPersonNumber": "87878",
+      "address": "",
+      "description": "878",
+      "pet": "",
+      "price": "",
+      "id": 14
+    }
+  ]
+}
